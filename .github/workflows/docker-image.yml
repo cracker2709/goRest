@@ -14,15 +14,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag cracker2709/public-restful-go:latest
-    
-    
-    uses: mr-smithers-excellent/docker-build-push@v4
+    - uses: mr-smithers-excellent/docker-build-push@v4
+    name: Build & push Docker image
     with:
       image: cracker2709/public-restful-go
-      registry: docker.io
-      #username: ${{ secrets.DOCKER_USERNAME }}
-      #password: ${{ secrets.DOCKER_PASSWORD }}
+      tag: latest
+      registry: registry-url.io
+      dockerfile: Dockerfile.ci
+      username: ${{ secrets.DOCKER_USERNAME }}
+      password: ${{ secrets.DOCKER_PASSWORD }}
 
       
