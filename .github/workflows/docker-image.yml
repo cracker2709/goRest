@@ -21,9 +21,9 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v4
     
       with:
-        image: public-restful-go
+        image: cracker2709/public-restful-go
         tag: latest
-        registry: cracker2709
+        registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
