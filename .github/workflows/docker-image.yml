@@ -23,8 +23,7 @@ jobs:
       with:
         image: cracker2709/public-restful-go
         tag: latest
-        registry: registry-url.io
-        dockerfile: Dockerfile.ci
+        registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
