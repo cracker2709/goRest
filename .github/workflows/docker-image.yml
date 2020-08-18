@@ -15,15 +15,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag cracker2709/public_restful_go:latest
+      run: docker build . --file Dockerfile --tag cracker2709/public-restful-go:latest
     
     
-    - uses: docker/build-push-action@v1
-    - name: Push to Docker Hub
-      with:
-        #username: ${{ secrets.DOCKER_USERNAME }}
-        #password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: cracker2709/public_restful_go:latest
-        tag_with_ref: true
+    uses: mr-smithers-excellent/docker-build-push@v4
+    with:
+      image: cracker2709/public-restful-go
+      registry: docker.io
+      #username: ${{ secrets.DOCKER_USERNAME }}
+      #password: ${{ secrets.DOCKER_PASSWORD }}
 
       
