@@ -15,7 +15,7 @@ Install it quickly on a kubernetes cluster
 kubectl run tmp-go-rest-pod --rm -i --tty --image cracker2709/public-restful-go:latest --namespace <your_namespace>
 
 # Port forward it so you are able to browse it locally
-kubectl port-forward tmp-go-rest-pod 8090:8080
+kubectl port-forward tmp-go-rest-pod 8080:8080
 ```
 
 - Browse through a web browser or better with postman
