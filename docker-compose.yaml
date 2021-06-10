@@ -1,0 +1,8 @@
+version: '3.2'
+
+services:
+  gorest:
+    # The official v2 Traefik docker image
+    image: cracker2709/public-restful-go:latest
+    container_name: gorest
+    restart: always
