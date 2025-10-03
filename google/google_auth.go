@@ -50,7 +50,7 @@ func listFilesInBucket(ctx context.Context, clientOption option.ClientOption, bu
 }
 
 func main() {
-	ctx, clientOpts := InitGoogleCloudAuth("/path/to/creds_json")
+	ctx, clientOpts := InitGoogleCloudAuth("path/to/creds.json")
 	bucket, err := listFilesInBucket(ctx, clientOpts, "bucket_name")
 	if err != nil {
 		fmt.Println(err)
