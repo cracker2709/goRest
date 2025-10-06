@@ -435,6 +435,8 @@ require (
 	github.com/zeebo/assert v1.3.0 // indirect
 	github.com/zeebo/errs v1.4.0 // indirect
 	github.com/zeebo/xxh3 v1.0.2 // indirect
+	github.com/zmb3/spotify v1.3.0 // indirect
+	github.com/zmb3/spotify/v2 v2.4.3 // indirect
 	go.einride.tech/aip v0.68.1 // indirect
 	go.etcd.io/bbolt v1.3.3 // indirect
 	go.etcd.io/etcd v0.0.0-20191023171146-3cf2f69b5738 // indirect
