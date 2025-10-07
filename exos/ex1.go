@@ -1,4 +1,4 @@
-package exos
+package main
 
 import (
 	"log"
